@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 - Resizable columns</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body{
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .box{
+      flex: 1 1 100%;
+      background-color: aqua;
+      color: white;
+      padding: 30px 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    @media (min-width: 768px){
+      .box {
+        flex: 1 1 calc(50% - 10px);
+      }
+    }
+
+    @media (min-width: 1024px){
+      .box {
+        flex: 1 1 calc(33.333% - 14px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="margin-bottom: 20px;">Task 1: Responsive Boxes</h2>
+
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+
+</body>
+</html>

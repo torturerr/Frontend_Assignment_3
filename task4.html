@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 - Portfolio Page</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    h1, h2, h3 {
+      font-size: 20px;
+    }
+    p, .card-text {
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px){
+      h1, h2, h3 {font-size: 26px;}
+      p, .card-text {font-size: 16px;}
+    }
+
+    @media (min-width: 1024px){
+      h1, h2, h3 {font-size: 32px;}
+      p, .card-text {font-size: 18px;}
+    }
+
+    body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: black;
+    }
+
+    main{
+      flex: 1;
+    }
+
+    .sidebar{
+      background-color:#212529;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px solid black;
+    }
+
+    footer{
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+
+        <a class="navbar-brand fw-bold" href="#">
+          <img src="684846676431.png" alt="Logo" height="60">
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="portfolioNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <h2 class="mb-3 text-white">My Portfolio</h2>
+    <div class="row g-4">
+      
+      <section class="col-12 col-lg-8" id="projects">
+
+        <div class="row g-3">
+          
+          <div class="col-12 col-md-6">
+            <div class="card h-100 bg-dark text-white rounded-4">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Project 1: HTML and CSS basics</h5>
+                <p class="card-text">A web site built with basic HTML and CSS styling.</p>
+                <a href="#" class="btn btn-primary btn-sm mt-auto">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100 bg-dark text-white rounded-4">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Project 2: Flexbox and Grid</h5>
+                <p class="card-text">Responsive website built with Flexbox and Grid.</p>
+                <a href="#" class="btn btn-primary btn-sm mt-auto">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card h-100 bg-dark text-white rounded-4">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title fw-bold">Project 3: Bootstrap Grid</h5>
+                <p class="card-text">Implementation of Bootstrap 12-column grid system for multi-device layout.</p>
+                <a href="#" class="btn btn-primary btn-sm mt-auto">View Code</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <aside class="col-12 col-lg-4 text-white" id="about">
+        <div class="sidebar">
+          <h3 class="fw-bold">About Me</h3>
+          <p>IT student, bad musician, learning modern Web technologies.</p>
+          <hr>
+          <h4 class="h5 fw-bold" id="contact">Contact Info</h4>
+          <p class="mb-1"><strong>Email:</strong> bikanov2007@gmail.com</p>
+          <p class="mb-0"><strong>GitHub:</strong> 
+            <a href="https://github.com/torturerr" target="_blank" rel="noopener noreferrer" class="text-decoration-none">
+              github.com/torturerr
+            </a>
+          </p>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2026 Aibar Bikanov.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
